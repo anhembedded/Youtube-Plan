@@ -53,6 +53,7 @@ gantt
 | Date | Item | Event and outcome |
 | :--- | :--- | :--- |
 | 2026-10-29 | Scaffold | Epic created; EPIC-001A started with Clarify v0.1. |
+| 2026-10-29 | EPIC-001A | Two rounds of questions answered; Clarify v0.2 written; waiting for both owners' approval. |
 
 ---
 
@@ -60,4 +61,5 @@ gantt
 
 | Blocker or dependency | Tasks affected | Resolution / owner | Status |
 | :--- | :--- | :--- | :--- |
-| Answers to Q-001 to Q-009 | EPIC-001A | The owner | 🟡 Open |
+| Answers to Q-001 to Q-009 | EPIC-001A | The owner | ✅ Resolved: answered or carried forward, 2026-10-29 |
+| Both owners approve Clarify §7; how the partner records it (Q-010) | EPIC-001A | The owner and the partner | 🟡 Open |

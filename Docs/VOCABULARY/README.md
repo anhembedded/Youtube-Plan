@@ -28,6 +28,7 @@ Working definitions. The official wording is read and dated in Discover (Clarify
 ## 3. Project terms
 | Term | Meaning |
 | :--- | :--- |
+| **The owners** | The owner and the partner, who approve together (Clarify C7). "The owner" alone means SH-1. See [Stakeholders](../Project-Management/Stakeholders.md). |
 | **Gate** | A checkpoint at the end of a step (Clarify, Discover, De-risk, Plan, Implement, Validate). See [Approach §5](../Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria). |
 | **Pilot video** | The first video made from story to upload, to measure real hours, cost and quality before a batch. |
 | **Spike** | A time-boxed experiment that answers one question (S-n). |

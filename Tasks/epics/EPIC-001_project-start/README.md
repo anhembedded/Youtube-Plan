@@ -21,6 +21,8 @@
 | Grey areas G1–G6 with evidence | 0 of 6 | 6 of 6 |
 | Epic roadmap for Gates 5–6 | None | Written in the Plan document |
 
+On 2026-10-29, after two rounds of answers, the Gate 1 questions are answered or carried forward to the gate that needs them (Q-005, Q-009); Q-010 (how the partner approves) is new.
+
 ## 3. Child tasks, ordered by risk
 Only the next gate is planned in detail. B, C and D are sliced when the gate before them passes.
 

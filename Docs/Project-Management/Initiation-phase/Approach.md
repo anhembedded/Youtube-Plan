@@ -6,12 +6,13 @@
 | Method | Six gates: Clarify, Discover, De-risk, Plan, Implement, Validate. Evidence before commitment; one pilot video before any batch. |
 | Where we are | Gate 1, Clarify, in progress. |
 | Biggest risk | R-1: the channel is refused for monetization because its videos count as reused or inauthentic content. |
-| Next | The owner approves [Clarify](Clarify/Clarify.md); then Discover. |
+| Next | Both owners approve [Clarify](Clarify/Clarify.md); then Discover. |
 
 | Field | Value |
 | :--- | :--- |
-| Version | 0.1 (Draft) |
+| Version | 0.2 (Draft, for approval) |
 | Date | 2026-10-29 |
+| Change from 0.1 | Two approvers (§3); Gate 1 needs both; R-5 no longer tied to an income target; R-7 and R-8 added |
 
 ---
 
@@ -28,7 +29,7 @@ The method behind the gates is in [Project-Process](../../Project-Process/Thinki
 The repository layout, the IDs, the decision process and the flow from idea to epic to task are in [PRO-001](../../../Tasks/proposal/PRO-001.md). Project documents live in `Docs/`; the work is tracked in `Tasks/`, on the [board](../../../Tasks/README.md).
 
 ## 3. Who decides
-Only the owner decides anything that spends money, picks a tool or provider, creates an account, publishes, uses someone else's material, or changes scope, acceptance criteria, budget or deadline. Every other choice is recorded in a decision record and reported to the owner. Approvals are recorded in the [index](../../README.md#3-approvals). Stakeholders are in [Stakeholders](../Stakeholders.md).
+**The owners** (the owner and the partner) decide together anything that spends money, picks a tool or provider, creates an account, publishes, uses someone else's material, or changes scope, acceptance criteria, budget or deadline; each such decision needs both approvals ([Clarify C7](Clarify/Clarify.md#51-constraints)). Every other choice is recorded in a decision record and reported to the owners. Approvals are recorded in the [index](../../README.md#3-approvals). Stakeholders are in [Stakeholders](../Stakeholders.md).
 
 ## 4. Life cycle
 Incremental. Gates 1–4 are tracked as [EPIC-001](../../../Tasks/epics/EPIC-001_project-start/README.md). Gate 4 (Plan) writes the epic roadmap for Gates 5 and 6 (`TODO → Plan phase`).
@@ -38,7 +39,7 @@ A gate is passed only when its exit criterion is met and the evidence is linked 
 
 | Gate | Step | Exit criterion | Evidence | Time-box or stop rule |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Clarify | Clarify covers why, what, scope, constraints and done; every owner question is answered or carried as an Open question; the owner approves Clarify §7. | Clarify §7 and the approvals table | Two rounds of questions to the owner; what is still open is carried forward |
+| 1 | Clarify | Clarify covers why, what, scope, constraints and done; every owner question is answered or carried as an Open question; both owners approve Clarify §7. | Clarify §7 and the approvals table | Two rounds of questions to the owner (done 2026-10-29); what is still open is carried forward |
 | 2 | Discover | Every `TODO → Discover phase` item has a finding with sources and dates, or is passed to De-risk. | The Discover document | `TODO → Plan phase` (set when EPIC-001B is sliced) |
 | 3 | De-risk | Every high-priority risk in §7 has a spike verdict, or an accepted response. | The De-risk document and spike files | Each spike has its own time-box |
 | 4 | Plan | Milestones and an epic roadmap exist, with scope, schedule and resources stated, from the Gate 3 evidence. | The Plan document | `TODO → Plan phase` |
@@ -55,9 +56,11 @@ Priority = Impact × Uncertainty. Every risk is an Assumption until a spike or a
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | R-1 | If YouTube counts the videos as reused or inauthentic content, monetization is refused, so O1 fails. | High | High | 🔥 Very high | Mitigate | Discover: read the policies (C5); De-risk: test with real videos (A1) | Open |
 | R-2 | If source creators or platforms file copyright claims, videos are blocked or the channel gets strikes. | High | High | 🔥 Very high | Mitigate | Discover: copyright and platform rules (A2); keep C1 on every video | Open |
-| R-3 | If one video takes more hours than the owner has (C3), the channel cannot publish regularly. | High | High | 🔥 Very high | Mitigate | De-risk: a pilot video with hours recorded (A3) | Open |
+| R-3 | If one video takes more hours than the owners have (C3), the channel cannot publish regularly. | High | High | 🔥 Very high | Mitigate | De-risk: a pilot video with hours recorded (A3) | Open |
 | R-4 | If the tools cost more than the budget (C2), the workflow must change. | Medium | High | 🟠 High | Mitigate | Discover: tool prices with dates; De-risk: real cost of the pilot | Open |
-| R-5 | If the chosen language and audience pay little per view, the income target (AC2) needs far more views. | High | Medium | 🟠 High | Mitigate | Discover: revenue per 1,000 views by language and country, with sources | Open |
+| R-5 | If the chosen language and audience pay little per view, the monetized channel earns little for the same work (P1). | High | Medium | 🟠 High | Mitigate | Discover: revenue per 1,000 views by language and country, with sources | Open |
 | R-6 | If YouTube's rules on AI-made content change, a working channel can lose monetization. | High | Medium | 🟠 High | Accept, and monitor | Re-check C5 at every gate and record the date checked | Open |
+| R-7 | If a new channel cannot reach the Partner Program thresholds with the owners' time and format, AC1 is not met. | High | High | 🔥 Very high | Mitigate | Discover: read the current thresholds (C5, A5); De-risk: the pilot's numbers | Open |
+| R-8 | If machine translation loses the meaning of a Chinese story, the remake is weak or wrong. | Medium | High | 🟠 High | Mitigate | Discover: compare translation tools on sample stories (A4); De-risk: check the pilot story | Open |
 
-**Next:** after Clarify is approved, Discover takes R-1, R-2, R-4 and R-5 first.
+**Next:** after both owners approve Clarify, Discover takes R-1, R-2, R-7, R-4, R-5 and R-8 first.
