@@ -73,9 +73,14 @@ flowchart TD
 | **3 Execution** | What does my team do? What are the processes? |
 | **4 Measurement** | What are the KPIs? How is success measured? |
 
-### 🤖 Example 4 — A RAG system
+### 📺 Example 4 — A YouTube story channel
 
-See [[RAG]] for a worked example of the four layers on an AI project.
+| Layer | Questions |
+| --- | --- |
+| **1 Context** | Who watches story channels? Which languages and countries pay the most per view? What do YouTube's monetization rules allow? |
+| **2 Architecture** | What is the production chain: source story → script → AI voice → visuals → edit → upload? |
+| **3 Implementation** | Which tool does each step? How long does each step take, and what does it cost? |
+| **4 Validation** | Which analytics prove it works: click-through rate, average view duration, revenue per 1,000 views? Did the channel pass the Partner Program review? |
 
 > [!quote] Why seniors think this way
 > Seniors rarely ask *"How is this function written?"* They ask:

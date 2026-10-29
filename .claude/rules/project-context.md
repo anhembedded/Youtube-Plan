@@ -1,36 +1,30 @@
 ---
-description: Informal background on the team, the client and why the project exists, so the AI understands the situation. Not the charter.
+description: Informal background on the owner and why the project exists, so the AI understands the situation. Not the charter.
 ---
 
 # Project Context
 
 Informal background so that an AI assistant understands the situation. It is **not** the project charter.
 Scope, constraints, assumptions, open questions and acceptance criteria live in
-[Clarify](../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and [Approach](../../Docs/Project-Management/Initiation-phase/Approach.md). If this file conflicts with them, they win.
+[Clarify](../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and [Approach](../../Docs/Project-Management/Initiation-phase/Approach.md) (not written yet). If this file conflicts with them, they win.
 State only what the owner confirmed; do not fill gaps with assumptions.
 
 ## Who and where
 
-- Our team is **F_MAGGG_TEAM**, an outsource team working for the client **MAGGG_COMP** on the project **MAGG_PROJ**.
-- We work on the client's PCs (remote PC, Windows). Any app we install needs to be granted first.
-- The KB and the RAG are owned by our team, not by the client.
+- The owner (GitHub `anhembedded`) runs the project and approves everything. Whether anyone else is involved: unknown — need to ask the owner.
+- This repository is used for project management of the channel: plans, decisions, research and checklists. It holds no videos.
+- The owner's method is in [Docs/Project-Process](../../Docs/Project-Process/Thinking%20New%20project.md) (Clarify, Discover, De-risk, Plan, Implement, Validate).
 
-## Why this sub-project exists
+## Why the project exists
 
-- The project lead thinks onboarding is too slow and that a searchable Knowledge Base (KB) would help.
-- The project lead chose a RAG as the solution, and had AI read the source code to generate many `.md` files about end-user use cases of the app.
-- Nobody has reviewed those files for correctness.
-- The project lead assigned me (Nathan Tran) to lead the sub-project that builds the RAG. The project lead is the only other person on it.
-- This is a **proposal project**, not a client requirement: no budget, no deadline.
-- Onboarding is the motivation, but this sub-project does not measure or own it. We provide the RAG capability and do not care what people use it for.
+- The owner wants to make money by creating a YouTube channel.
+- Content: stories found on Chinese social media, remade with the owner's own script and an AI voice. Re-uploading or lightly editing the original videos was ruled out (confirmed by the owner).
 
-## Working reality (not for the charter)
+## Not decided yet (owner's words: "decided in the plan phase")
 
-- Reviewing the KB is not an official task. The project lead cannot assign it, the domain is large and needs many developers and testers, and I do not know whether members would agree to do it.
-- Today people find knowledge by asking colleagues, or in Confluence and guide documents. No single source is the true one.
-- The client provides Copilot 365 and GitHub Copilot Enterprise. I do not yet know whether our own tool may call them.
-- Expected number of users: roughly 10 to 100.
+- Story genre, video language and target audience, and format (long videos, Shorts or both). By the framework's triage rule these come from research (Discover) and a pilot video (De-risk), not from the Plan step.
+- Budget per month and hours per week: the owner said they will post reference material.
 
 ## Still to ask
 
-Tracked in the open-question register (`Docs/README.md` §5), Clarify §5.1 and Grey area G1. Most important: may our tool use the client's Copilot services or any other external LLM, who reviews the KB, how many `.md` files exist now, and how the client grants app installs.
+Whether anyone else is involved, budget, time available, the owner's country (payout eligibility and tax), whether the owner reads Chinese, existing channel or starting from zero, and the income target and time frame.

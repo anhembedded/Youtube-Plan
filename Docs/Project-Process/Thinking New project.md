@@ -101,7 +101,7 @@ flowchart LR
 
 **Core steps**
 1. [[01 Clarify]]
-2. [[02 Discover]] (with the worked example [[RAG]])
+2. [[02 Discover]] (with the worked example of a YouTube story channel)
 3. [[03 De-risk]]
 4. [[04 Plan]]
 5. [[05 Implement]]
