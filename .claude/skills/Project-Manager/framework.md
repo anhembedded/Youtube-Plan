@@ -6,6 +6,7 @@ The steps the project follows and the rules for moving work between them. It app
 Terms are defined in `Docs/VOCABULARY/README.md`. Status, registers and approvals are in `Docs/README.md` (both not written yet).
 
 Source of the framework: [Docs/Project-Process](../../../Docs/Project-Process/Thinking%20New%20project.md).
+The repository layout and the decision process were accepted in [PRO-001](../../../Tasks/proposal/PRO-001.md).
 
 ## 1. Steps and gates
 
@@ -46,6 +47,9 @@ Each rule, spec or definition lives in one place (Constitution invariant 2).
 | a choice between alternatives | `Docs/Decisions/` (from `_template.md`) |
 | a word or its meaning | `Docs/VOCABULARY/README.md` |
 | status, registers, approvals | `Docs/README.md` |
+| order of work, milestones, the epic roadmap | `Docs/Project-Management/Plan/Plan.md` |
+| new scope or work of unclear value | a proposal in `Tasks/proposal/` (`.claude/templates/proposal.md`) |
+| the state of an epic or a task | the epic's `README.md` and `TRACKING.md`, the task file, and `Tasks/README.md` |
 
 Changing scope or acceptance criteria, spending money, choosing a tool or provider, publishing, and using third-party material are
 Tier C (Constitution §2): they need the owner's approval, recorded in the approvals table.
@@ -114,4 +118,4 @@ The four phases of a project and where they sit here (PMBOK 6 names in brackets)
 3. **Each step states:** goal, output, exit criterion, time-box or stop rule, owner, and what blocks it (Q and D IDs).
 4. **Sequence by risk, not by ease.** Do first the step whose answer is most likely to change a major decision (e.g. whether remade AI-voice story videos can be monetized at all).
 5. **Close the plan.** Include what closing needs: acceptance against Clarify §6, lessons learned, and what happens after the project ends.
-6. **Where the plan is kept:** TODO (decide when the first plan is made, then add it to the document map).
+6. **Where the plan is kept:** the milestones and the epic roadmap in `Docs/Project-Management/Plan/Plan.md`; the work itself as epics and tasks in `Tasks/` (`.claude/skills/create-epic/SKILL.md`), shown on `Tasks/README.md`. Gates 1–4 are tracked as EPIC-001, whose phase folders are skipped because the project documents are those phases.

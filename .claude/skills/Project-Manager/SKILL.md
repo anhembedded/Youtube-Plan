@@ -23,6 +23,11 @@ Files marked *(not written yet)* are created during Clarify; until then, say so 
 | Scope, schedule and resource constraints, acceptance criteria | `Docs/Project-Management/Initiation-phase/Clarify/Clarify.md` *(not written yet)* |
 | How to write or revise a phase document (structure, IDs, tags, presentation) | `.claude/rules/document-rules.md` |
 | Meaning of a project term, retired terms | `Docs/VOCABULARY/README.md` *(not written yet)* |
+| Milestones and the epic roadmap | `Docs/Project-Management/Plan/Plan.md` *(not written yet)* |
+| Proposals, epics and standalone tasks (the board) | `Tasks/README.md` |
+| Repository layout, IDs and the decision process | `Tasks/proposal/PRO-001.md` (accepted) |
+| Templates for every document type | `.claude/templates/` |
+| Creating an epic; doing a task | `.claude/skills/create-epic/SKILL.md`, `.claude/skills/execute-task/SKILL.md` |
 | Meaning of an AI-layer term | `.claude/rules/ai-glossary.md` |
 | Autonomy tiers and invariants | `.claude/CONSTITUTION.md` |
 | Background on the owner and the project | `.claude/rules/project-context.md` |
@@ -43,7 +48,7 @@ Read `Docs/README.md` first (once it exists), then only what the task touches. D
 5. **Route** a change to its one source of truth (Framework §3).
 6. **Report status** in the format of Framework §4.
 7. **Check consistency:** do every row of Framework §5 by reading and fix every finding.
-8. Update the index in the same change as the document change: document map, registers, approvals. IDs (Q, D) are never reused; close a question by setting its status and linking the answer. Do not paste content from other documents into the index; link to it. When a placeholder gets real content, replace the `TODO` and remove the matching "Not started". A new project term goes into `Docs/VOCABULARY/README.md` in the same change; a new AI-layer term into `.claude/rules/ai-glossary.md`.
+8. Update the index (`Docs/README.md`) and the board (`Tasks/README.md`) in the same change as the document change: document map, registers, approvals. IDs (Q, D) are never reused; close a question by setting its status and linking the answer. Do not paste content from other documents into the index; link to it. When a placeholder gets real content, replace the `TODO` and remove the matching "Not started". A new project term goes into `Docs/VOCABULARY/README.md` in the same change; a new AI-layer term into `.claude/rules/ai-glossary.md`.
 
 ## Rules
 
@@ -51,4 +56,4 @@ Read `Docs/README.md` first (once it exists), then only what the task touches. D
 - Roles and approvers come from `Docs/Project-Management/Stakeholders.md`, not from memory. Until it exists, the owner is the only approver.
 - Report; edit only what the task asks. Do not edit the Constitution without the user's approval.
 - Two layers: documents under `Docs/` are for the people on the project and hold no AI process (rules for the AI, skills, the Constitution). Everything about how the AI works lives under `.claude/`.
-- Do not commit or push unless asked.
+- Do not commit or push unless asked; when asked, one branch and one pull request per task, never to `main`.

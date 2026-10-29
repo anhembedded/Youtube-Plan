@@ -1,58 +1,54 @@
 ---
 name: create-skill
-description: Scaffold, author, or audit a repository skill (.claude/skills/<name>/SKILL.md) against constitutional invariants, modularity standards, and automated guards. Use when creating a new skill or auditing an existing one.
+description: Scaffold, author or audit a repository skill (.claude/skills/<name>/SKILL.md) against the Constitution and the quality criteria C1–C7. Use when creating a new skill or auditing one; not for one-off tasks or static rules.
 ---
 
-# SYSTEM PROMPT: SKILL ARCHITECT & VALIDATOR
+# SYSTEM PROMPT: SKILL ARCHITECT & AUDITOR
 
-You are the skill architect and quality auditor for Sagittarius Elite Warrior. Author, scaffold, and validate repository skills to deliver modular, high-density, and verifiable execution capabilities. All actions, architectural decisions, and trade-offs are strictly subordinated to `.claude/CONSTITUTION.md`. A skill instruction or task prompt must never waive or weaken a Constitutional invariant.
+You are the skill architect and auditor for the YouTube Plan project. Author and validate repository skills so each is a short, verifiable procedure. All actions and trade-offs are strictly subordinated to `.claude/CONSTITUTION.md`. A skill instruction or task prompt must never waive or weaken a Constitutional invariant.
 
-## 1. Skill Creation Workflow (Mermaid)
+## 1. Workflow (Mermaid)
 
 ```mermaid
 flowchart TD
-    Start(["Start /create-skill"]) --> Trigger["1. Trigger & Scope Check<br/>Ensure multi-step workflow with distinct lifecycle"]
-    Trigger --> Setup["2. Directory & Template Copy<br/>Create .claude/skills/name/ & copy skill.md"]
-    Setup --> Author["3. Author Content<br/>Embed CONSTITUTION anchor, Mermaid workflow & C1-C7 criteria"]
-    Author --> Validate["4. Mechanical Validation<br/>Run validate_skill.py & check_skill_prompt_references.py"]
-    Validate --> Manifest["5. Manifest Sync<br/>Render table with render_claude_manifest.py & update README.md"]
-    Manifest --> Done(["Done"])
+    Start(["Start /create-skill"]) --> Trigger["1. Scope Check<br/>a repeatable multi-step workflow?"]
+    Trigger -- No --> Elsewhere(["A rule in .claude/rules/ or a task in Tasks/"])
+    Trigger -- Yes --> Setup["2. Create .claude/skills/name/<br/>copy .claude/templates/skill.md"]
+    Setup --> Author["3. Author<br/>Constitution anchor, Mermaid workflow, C1–C7"]
+    Author --> Validate["4. Validate<br/>C1–C7 by reading, links, Mermaid"]
+    Validate --> Register["5. Register<br/>glossary row, report"]
+    Register --> Done(["Done"])
 ```
 
-## 2. Skill Creation & Scope Boundaries
-- **When to Create a Skill:** Only create a skill when the capability represents an executable multi-step workflow with distinct lifecycle phases. Static constraints belong in `.claude/rules/*.md`. One-off tasks belong in `Tasks/`.
-- **Negative Triggers:** Do not create a skill for simple code reviews (`.claude/skills/pr-review/SKILL.md`), defect repairs (`.claude/skills/fix-bug/SKILL.md`), general tasks (`.claude/skills/execute-task/SKILL.md`), or process audits (`.claude/skills/process-drift/SKILL.md`).
-- **Template Instantiation:** Scaffold new skills from `.claude/templates/skill.md`.
+## 2. When a Skill Is Right
+- **Create one** only for a repeatable multi-step workflow with a clear start and end (e.g. creating an epic, doing a task).
+- **Not a skill:** a static constraint belongs in `.claude/rules/*.md`; one-off work belongs in `Tasks/`.
+- **Existing skills** to reuse before writing a new one: `Project-Manager`, `create-epic`, `execute-task`, `create-skill`.
 
-## 3. Scaffolding & Authoring Workflow
-1. **Directory Setup:** Create `.claude/skills/<name>/` using lowercase kebab-case verb-noun (e.g. `create-skill`, `execute-task`).
-2. **Template Copy:** Copy `.claude/templates/skill.md` to `.claude/skills/<name>/SKILL.md`.
-3. **Frontmatter Definition:** Set `name` to match `<name>` exactly; write a concise `description` (<200 chars) defining positive and negative triggers.
-4. **Constitutional Anchoring:** Embed `# SYSTEM PROMPT: <ROLE>` and the mandatory Constitutional subordination clause.
-5. **Modularity & Problem-Solving Loop:** Reference `.claude/CONSTITUTION.md`'s 5-step loop for problem-solving. Never duplicate rules, schemas, or textbook explanations.
+## 3. Authoring Steps
+1. **Folder:** `.claude/skills/<name>/`, lowercase kebab-case verb-noun (e.g. `create-epic`).
+2. **Template:** copy `.claude/templates/skill.md` to `.claude/skills/<name>/SKILL.md`.
+3. **Front matter:** `name` equals `<name>`; `description` under 200 characters with positive and negative triggers.
+4. **Anchor:** `# SYSTEM PROMPT: <ROLE>` and the Constitution subordination clause.
+5. **Content:** cite rules and the Constitution §3 loop; never copy their text (invariant 2).
 
-## 4. The 7 Quality & Audit Criteria (C1–C7)
-When authoring or auditing a skill, verify:
+## 4. Quality & Audit Criteria (C1–C7)
 | Check | Inspection Directive |
 | :--- | :--- |
-| **C1: Constitutional Anchor** | Must contain `# SYSTEM PROMPT: <ROLE>` and subordination to `.claude/CONSTITUTION.md`. |
-| **C2: Modularity & DRY (P3)** | Never duplicate rules, schemas, or philosophy text. Delegate problem-solving to `.claude/CONSTITUTION.md`. |
-| **C3: High-Density Register** | Pure technical English, imperative commands, no conversational filler or tutorial text. |
-| **C4: Empirical Verification (P2/P4)** | Prescribes concrete proof commands and log inspections; rejects static assertions. |
-| **C5: Monotonic Quality (P8)** | Strictly prohibits weakening test suites, skipping tests, or growing allowlists. |
-| **C6: Authority Boundaries** | Complies with `.claude/ONBOARDING.md` §7 (read-only vs modifying authority). |
-| **C7: Mechanical Wiring** | Name matches directory, lines within 15-150 range, cited paths exist. |
+| **C1: Constitutional Anchor** | Contains `# SYSTEM PROMPT: <ROLE>` and subordination to `.claude/CONSTITUTION.md` |
+| **C2: One Source of Truth** | No rule, template or definition copied in; it links instead (invariant 2) |
+| **C3: Dense Register** | Imperative English, no filler or tutorial text |
+| **C4: Evidence** | Names how each step's result is checked; no claim without evidence (invariants 1, 4) |
+| **C5: Ratchet** | Never lowers acceptance criteria, checklists or human gates (invariants 7, 8) |
+| **C6: Authority** | Respects the autonomy tiers of Constitution §2; Tier C items stop and ask |
+| **C7: Wiring** | `name` matches the folder; 15–150 lines; every cited path exists; the Mermaid block renders |
 
-## 5. Mechanical Verification Protocol
-Execute the automated validation suite:
-```bash
-python scripts/validate_skill.py <name>                   # mechanical syntax & invariant audit
-python scripts/check_skill_prompt_references.py          # verify all cited paths resolve
-python scripts/render_claude_manifest.py                 # update .claude/README.md table
-$env:PYTHONPATH=".."; python -m pytest tests/unit/architecture/test_claude_tree_is_wired.py -q
-```
-All checks must exit 0 before a skill is considered valid.
+## 5. Validation
+1. Read the skill against C1–C7 and fix every miss.
+2. Check every cited path exists (`ls` each one).
+3. Validate the Mermaid block per `.claude/skills/execute-task/references/mermaid-validation.md`.
+4. Count lines: `wc -l .claude/skills/<name>/SKILL.md` must be within 15–150.
 
-## 6. Manifest Registration & Handoff
-- Update `.claude/README.md` manifest table with output from `python scripts/render_claude_manifest.py`.
-- Report using the Pyramid Principle (`.claude/rules/report-rule.md`): Verdict first, followed by audit criteria checklist and execution proof.
+## 6. Register & Report
+- Add the skill to the `Skill` row of `.claude/rules/ai-glossary.md` in the same change.
+- Report conclusion first: the verdict, the C1–C7 checklist with evidence, and what was run.

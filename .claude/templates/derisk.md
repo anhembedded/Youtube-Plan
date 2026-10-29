@@ -1,17 +1,15 @@
 ---
-description: The format of an epic's De-risk index in the README.md of the epic's derisk/ folder (Tasks/epics/README.md) — throwaway experiments that confirm or overturn provisional decisions, one file per experiment beside it. Conditional: section 4 of the create-epic skill decides. Copy it, fill every brace, delete this front matter and instructional comments.
+description: The format of a De-risk index — the project De-risk (Docs/Project-Management/De-risk/De-risk.md) or an epic's derisk/README.md — throwaway spikes that confirm or overturn provisional choices, one file per spike beside it. Copy it, fill every brace, delete this front matter and instructional comments.
 ---
 
-# De-risk — EPIC-{nnn} {short title}
+# De-risk — {the project, or EPIC-{nnn} short title}
 
-<!-- Write De-risk only when section 4 of the create-epic skill calls for one. This file is the index; each experiment is its own R{n}_{slug}.md beside it, in the experiment format below. Spike code lives outside the repository or inside a fenced block of the experiment file: a .py file here makes the pull request code (ONBOARDING §7). -->
+<!-- An epic writes one only when create-epic §4 calls for it. This file is the index; each spike is its own S{n}_{slug}.md beside it, in the format below. A spike has one question, a success rule, a failure rule and a timebox (Docs/Project-Process/Technical Spike Template.md). A spike that spends money or publishes needs the owner's approval first. -->
 | Field | Value |
 | :--- | :--- |
-| Document type | De-risk: throwaway experiments that confirm or overturn the provisional decisions |
-| Epic | EPIC-{nnn} — {the outcome} |
 | Version | {0.1} ({Draft / Complete}) |
-| Status | {which experiments ran, which wait for whom} |
-| Inputs | {charter version · Discover version · code at {branch} {sha}} |
+| Status | {which spikes ran, which wait for whom} |
+| Inputs | {charter version · Discover version} |
 | Next step | {the decision records for G…} |
 
 **Revision history**
@@ -25,19 +23,23 @@ description: The format of an epic's De-risk index in the README.md of the epic'
 ## Summary
 | ID | Question (short) | Verdict | Effect | File |
 | :--- | :--- | :--- | :--- | :--- |
-| R1 | {…} | {Confirmed / Overturned / Inconclusive / Measured} | {what it does to G…} | [R1](R1_{slug}.md) |
+| S-1 | {…} | {Confirmed / Overturned / Inconclusive / Measured} | {what it does to G… or R-n} | [S-1](S1_{slug}.md) |
 
-## Amendments this evidence asks for
-{Numbered: the charter, decision or acceptance line each verdict changes.}
+## Changes this evidence asks for
+{Numbered: the charter, decision, risk or acceptance line each verdict changes.}
 
 <!--
-Experiment file R{n}_{slug}.md:
+Spike file S{n}_{slug}.md:
 
-# R{n} — {the question as one line}
+# S-{n} — {the question as one line}
 
-- **Question:** {what would make the provisional decision wrong}
-- **What was run:** {setup, commands, machine, commit sha; spike code in a fenced block}
-- **Result:** {measured numbers and raw evidence}
+- **Linked risk:** {R-n in Approach §7}
+- **Question:** {what would make the provisional choice wrong}
+- **Success rule:** {the result that means "yes"}
+- **Failure rule:** {the result that means "no", and the alternative to try}
+- **Timebox:** {agreed duration}
+- **What was done:** {steps, tools, dates}
+- **Result:** {measured numbers and raw evidence: hours, cost, links}
 - **Verdict:** {Confirmed / Overturned / Inconclusive / Measured}
-- **What it does to G…:** {the decision line it confirms or changes}
+- **What it does to G… / R-n:** {the line it confirms or changes}
 -->
