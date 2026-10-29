@@ -1,64 +1,58 @@
 ---
-description: The format of an epic's TRACKING.md under Tasks/epics/EPIC-nnn_slug/. Copy it, fill every brace, delete this front matter and instructional comments.
+description: The format of an epic's TRACKING.md under Tasks/epics/EPIC-nnn_slug/ — required for every epic; its Gantt is required and refreshed whenever a child changes state. Copy it, fill every brace, delete this front matter and instructional comments.
 ---
 
 # EPIC-{nnn} — Tracking
 
-<!-- Lightweight tracking index: high-level headings, Gantt schedule, and milestone log only. -->
-<!-- DO NOT write implementation details, test outputs, or full specs here. Detailed problem context, design, acceptance criteria, and per-file notes belong strictly in each child task file under incomplete/ or completed/. -->
-- **Epic:** {link to the parent epic README}
-- **Status:** {🔵 Planned / 🟡 In Progress / ✅ Done (YYYY-MM-DD)}
-- **Target Completion:** {YYYY-MM-DD}
+<!-- High-level only: the Gantt, the task matrix, a one-line log and blockers. Context, approach, acceptance criteria and notes belong in each child task file. -->
+- **Epic:** {link to the epic README}
+- **Status:** {🔵 Planned / 🟡 In progress / ✅ Done (YYYY-MM-DD)}
+- **Target completion:** {YYYY-MM-DD, or None — no deadline (cite Clarify §5.1)}
 - **Renders:** GitHub Markdown, VS Code Mermaid preview, or mermaid.live.
 
 ---
 
 ## 1. Schedule (Gantt)
 
-<!-- Keep bars high-level (one per milestone/PR). Replace sample bars with your epic timeline. -->
+<!-- Required. One bar per child task and one per phase gate; every child of the epic README has a bar. Replace the sample bars. Whenever a child starts, finishes or is cancelled, the same pull request refreshes its bar (`active` → `done`, real dates; a cancelled bar keeps its dates and gains "(cancelled)") and moves the dependent bars. Validate per .claude/skills/execute-task/references/mermaid-validation.md before committing. -->
 ```mermaid
 gantt
-    title EPIC-nnn - Epic Title
+    title EPIC-nnn - Epic title
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
     todayMarker stroke-width:2px,stroke:#d33,opacity:0.6
 
-    section Spec
-    Spec and sub-task breakdown           :done,    s1, 2026-09-01, 1d
-    User review of spec                   :crit, done, s2, after s1, 1d
+    section Phases
+    Charter and task breakdown            :done,    s1, 2026-11-01, 1d
+    Owner review                          :crit, done, s2, after s1, 1d
 
-    section Phase 1 - Scaffolding
-    PR 1.1 Contracts and unit tests       :active,  p11, after s2, 2d
-    PR 1.2 Core service implementation    :         p12, after p11, 2d
-    Phase 1 exit check                    :milestone, m1, after p12, 0d
+    section Work
+    EPIC-nnnA First child task            :active,  a, after s2, 2d
+    EPIC-nnnB Second child task           :         b, after a, 2d
+    Exit check                            :milestone, m1, after b, 0d
 ```
 
 ---
 
-## 2. Sub-tasks & PR Matrix
+## 2. Task matrix
 
-<!-- Keep rows to 1-line references. Clickable links point to active child task files under incomplete/ or completed/. -->
-
-| Id | Sub-task | Branch / PR | Risk | Status | Target / Merged |
+| Id | Task | Branch / PR | Risk | Status | Target / Merged |
 | :--- | :--- | :--- | :-: | :--- | :--- |
-| {EPIC-nnnA} | {summary, linked to incomplete/ task file} | `{branch_name}` | {🟢 / 🟡 / 🔴} | {🔵 Planned / 🟡 Active / ✅ Merged} | {YYYY-MM-DD} |
-| {EPIC-nnnB} | {summary, linked to incomplete/ task file} | `{branch_name}` | {🟢 / 🟡 / 🔴} | {🔵 Planned / 🟡 Active / ✅ Merged} | {YYYY-MM-DD} |
+| {EPIC-nnnA} | {summary, linked to its task file} | `{branch}` / {PR link} | {🟢 / 🟡 / 🔴} | {🔵 Planned / 🟡 Active / ✅ Merged} | {YYYY-MM-DD} |
 
 ---
 
-## 3. Milestone & Status Log
+## 3. Log
 
-<!-- One line per event/PR. No long commentary or logs — summarize event and outcome in one sentence. Detailed notes belong in child task files. -->
-
-| Date | Item | Event & Outcome |
+<!-- One line per event or pull request. -->
+| Date | Item | Event and outcome |
 | :--- | :--- | :--- |
-| {YYYY-MM-DD} | Spec | Epic scaffolded, sub-tasks sliced, reviewed. |
-| {YYYY-MM-DD} | PR 1.1 | Merged (PR #{number}) — {1-line outcome}. |
+| {YYYY-MM-DD} | Scaffold | Epic created, child tasks sliced. |
 
 ---
 
-## 4. Blockers & Dependencies
+## 4. Blockers and dependencies
 
-| Blocker / Dependency | Impacted Tasks | Resolution / Owner | Status |
+| Blocker or dependency | Tasks affected | Resolution / owner | Status |
 | :--- | :--- | :--- | :--- |
-| {Prerequisite or external blocker} | {Task Ids} | {Resolution strategy or owner} | {🟡 Open / ✅ Resolved} |
+| {e.g. the owner's answer to Q-nnn} | {task ids} | {who acts} | {🟡 Open / ✅ Resolved} |
