@@ -6,7 +6,7 @@ description: Informal background on the owner and why the project exists, so the
 
 Informal background so that an AI assistant understands the situation. It is **not** the project charter.
 Scope, constraints, assumptions, open questions and acceptance criteria live in
-[Clarify](../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and [Approach](../../Docs/Project-Management/Initiation-phase/Approach.md) (not written yet). If this file conflicts with them, they win.
+[Clarify](../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and [Approach](../../Docs/Project-Management/Initiation-phase/Approach.md). If this file conflicts with them, they win.
 State only what the owner confirmed; do not fill gaps with assumptions.
 
 ## Who and where

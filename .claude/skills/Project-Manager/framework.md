@@ -2,8 +2,8 @@
 
 The steps the project follows and the rules for moving work between them. It applies the owner's project-management framework
 (Clarify, Discover, De-risk, Plan, Implement, Validate) to the YouTube Plan project. Gate definitions and exit criteria will live in
-`Docs/Project-Management/Initiation-phase/Approach.md` (not written yet); this file adds only the mapping and the working rules.
-Terms are defined in `Docs/VOCABULARY/README.md`. Status, registers and approvals are in `Docs/README.md` (both not written yet).
+[Approach §5](../../../Docs/Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria); this file adds only the mapping and the working rules.
+Terms are defined in [Vocabulary](../../../Docs/VOCABULARY/README.md). Status, registers and approvals are in [Docs/README.md](../../../Docs/README.md).
 
 Source of the framework: [Docs/Project-Process](../../../Docs/Project-Process/Thinking%20New%20project.md).
 The repository layout and the decision process were accepted in [PRO-001](../../../Tasks/proposal/PRO-001.md).

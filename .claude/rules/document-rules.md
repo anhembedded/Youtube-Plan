@@ -5,7 +5,7 @@ description: Rules the AI follows when writing or revising project documents und
 # Document rules — how project documents are written
 
 Apply these rules when writing or revising any project document (Clarify, Discover, De-risk, Plan and later phases) and any work file under `Tasks/` (proposals, epics, tasks), so each one is right from the first draft. Templates are in `.claude/templates/`.
-Phases and gates are in [Framework](../skills/Project-Manager/framework.md); terms are in `Docs/VOCABULARY/README.md` (not written yet).
+Phases and gates are in [Framework](../skills/Project-Manager/framework.md); terms are in [Vocabulary](../../Docs/VOCABULARY/README.md).
 A reader must not need the context of the conversation to understand a document: say it in the document.
 
 ## 1. Structure and level

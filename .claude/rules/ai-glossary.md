@@ -5,7 +5,7 @@ description: Terms for the AI layer of the YouTube Plan project (governance, pro
 # AI glossary
 
 Terms that matter to how the AI works on this project, kept out of the project documents on purpose: the people on the project do not need them (Constitution invariant 11).
-Project terms (niche, gates, roles, YouTube metrics) are defined in `Docs/VOCABULARY/README.md` (not written yet). Define a term once; add new AI-layer terms here in the same change.
+Project terms (niche, gates, roles, YouTube metrics) are defined in [Vocabulary](../../Docs/VOCABULARY/README.md). Define a term once; add new AI-layer terms here in the same change.
 
 | Term | Definition | Owner | Defined in | Not to be confused with |
 | :--- | :--- | :--- | :--- | :--- |
