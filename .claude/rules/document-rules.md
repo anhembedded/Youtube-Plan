@@ -68,4 +68,4 @@ A reader must not need the context of the conversation to understand a document:
 
 18. **One source of truth.** A rule, spec or definition lives in one place; others link ([Framework §3](../skills/Project-Manager/framework.md)).
 19. **Update the index and the board in the same change:** `Docs/README.md` (document map, registers, approvals) and `Tasks/README.md` (proposals, epics, standalone tasks).
-20. **Check before finishing:** do every check in [Framework §5](../skills/Project-Manager/framework.md) by reading, and fix every finding (links, IDs, traceability, phase tags, labels, no secrets).
+20. **Check before finishing:** run `python3 .github/scripts/check_docs.py` (it also runs on every pull request), then do the rest of [Framework §5](../skills/Project-Manager/framework.md) by reading; fix every finding.

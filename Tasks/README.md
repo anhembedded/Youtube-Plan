@@ -20,4 +20,4 @@ How the work is organised (folders, IDs, how decisions are made): [PRO-001](prop
 
 | Id | Task | Priority | Status |
 | :--- | :--- | :-: | :--- |
-| — | None yet | — | — |
+| [TASK-001](backlog/TASK-001_process-guard.md) | Every session follows the process; a broken rule is caught automatically | P1 | ✅ Done (2026-10-30) |

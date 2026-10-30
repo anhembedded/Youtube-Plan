@@ -70,7 +70,8 @@ State uncertainty early. Give dates only where one exists; see the constraints i
 
 ## 5. Consistency checks
 
-Do these by reading. Report each finding as a table row (location, issue, fix).
+**Run the guard first:** `python3 .github/scripts/check_docs.py`. It checks mechanically, and again on every pull request (`.github/workflows/docs-check.yml`): links and anchors; Clarify, risk, question, decision and source IDs cited but not defined; the assumption log against the assumptions; the document map and the board; AI-process words in `Docs/` and `Tasks/`; personal data and secrets; and that every Mermaid block renders. Its known exceptions are listed in the script with a reason and may only shrink.
+Do the rows it cannot judge by reading. Report each finding as a table row (location, issue, fix).
 
 | Check | Looks for |
 |-------|-----------|

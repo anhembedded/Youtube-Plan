@@ -47,7 +47,7 @@ Read `Docs/README.md` first (once it exists), then only what the task touches. D
    - An approval is recorded only when the person gave it, with evidence (e.g. a quote from the conversation and its date).
 5. **Route** a change to its one source of truth (Framework §3).
 6. **Report status** in the format of Framework §4.
-7. **Check consistency:** do every row of Framework §5 by reading and fix every finding.
+7. **Check consistency:** run `python3 .github/scripts/check_docs.py`, then do the remaining rows of Framework §5 by reading; fix every finding. Never add to the script's allowlist without a reason and the user's agreement.
 8. Update the index (`Docs/README.md`) and the board (`Tasks/README.md`) in the same change as the document change: document map, registers, approvals. IDs (Q, D) are never reused; close a question by setting its status and linking the answer. Do not paste content from other documents into the index; link to it. When a placeholder gets real content, replace the `TODO` and remove the matching "Not started". A new project term goes into `Docs/VOCABULARY/README.md` in the same change; a new AI-layer term into `.claude/rules/ai-glossary.md`.
 
 ## Rules

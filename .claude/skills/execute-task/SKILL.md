@@ -58,7 +58,7 @@ flowchart TD
 ## 6. Verify
 - Map every acceptance criterion to evidence: a link, a quoted source with its date, a filled document, the owner's recorded answer.
 - A criterion without evidence stays unchecked; never mark it done from intent.
-- Validate every Mermaid block you add or change per [the Mermaid validation workflow](references/mermaid-validation.md); check every relative link resolves.
+- Run `python3 .github/scripts/check_docs.py` and fix every finding; validate every Mermaid block you add or change per [the Mermaid validation workflow](references/mermaid-validation.md).
 
 ## 7. Close & Hand Off
 - Move the task to `completed/` (epic child) or set its status in `Tasks/backlog/` (standalone), set `✅ Done (YYYY-MM-DD)`, and write the implementation notes.
