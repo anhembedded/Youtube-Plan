@@ -46,5 +46,5 @@ The working process is accepted ([PRO-001](../../../proposal/PRO-001.md)), but n
 | 6 | The approvals table has both owners' words and date | Not done: waiting for the owner and the partner |
 
 ## Resume
-- **Last verified:** Clarify v0.3 written on 2026-10-30 (v0.2 on 2026-10-29 from two rounds of answers).
-- **Next action:** the owner and the partner review [Clarify v0.3](../../../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and approve §7; the owners answer Q-010 (how the partner records approval).
+- **Last verified:** Clarify v0.4 written on 2026-10-30, with YouTube's rules checked against official pages; v0.3 the same day (v0.2 on 2026-10-29 from two rounds of answers).
+- **Next action:** the owner and the partner review [Clarify v0.4](../../../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and approve §7; the owners answer Q-010 (how the partner records approval) and Q-011 (which tier counts as monetized).

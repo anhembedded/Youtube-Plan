@@ -55,6 +55,7 @@ gantt
 | 2026-10-29 | Scaffold | Epic created; EPIC-001A started with Clarify v0.1. |
 | 2026-10-29 | EPIC-001A | Two rounds of questions answered; Clarify v0.2 written; waiting for both owners' approval. |
 | 2026-10-30 | EPIC-001A | Clarify v0.3: P3 and G7 (how a channel grows); assumption log and source register added to the index. |
+| 2026-10-30 | EPIC-001A | Clarify v0.4: YouTube's rules checked against seven official pages (SRC-3 to SRC-9); the 2027 threshold for new channels doubles; Q-011 asks which tier counts as monetized. |
 
 ---
 

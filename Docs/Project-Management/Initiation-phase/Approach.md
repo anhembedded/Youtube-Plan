@@ -10,9 +10,10 @@
 
 | Field | Value |
 | :--- | :--- |
-| Version | 0.2 (Draft, for approval) |
+| Version | 0.3 (Draft, for approval) |
 | Date | 2026-10-29 |
 | Change from 0.1 | Two approvers (§3); Gate 1 needs both; R-5 no longer tied to an income target; R-7 and R-8 added |
+| Change from 0.2 | R-1, R-6 and R-7 restated from YouTube's official pages, checked 2026-10-30 (Clarify C5) |
 
 ---
 
@@ -54,13 +55,13 @@ Priority = Impact × Uncertainty. Every risk is an Assumption until a spike or a
 
 | ID | Risk statement | Impact | Uncertainty | Priority | Response | Action | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| R-1 | If YouTube counts the videos as reused or inauthentic content, monetization is refused, so O1 fails. | High | High | 🔥 Very high | Mitigate | Discover: read the policies (C5); De-risk: test with real videos (A1) | Open |
+| R-1 | If YouTube judges the videos as readings of material the channel did not create, or as mass-produced template content (Clarify C5 b, c), monetization is refused, so O1 fails. | High | High | 🔥 Very high | Mitigate | Discover: how far a remake must depart from its source, from cases and guidance; De-risk: the pilot checked against C5 b and c (A1) | Open |
 | R-2 | If source creators or platforms file copyright claims, videos are blocked or the channel gets strikes. | High | High | 🔥 Very high | Mitigate | Discover: copyright and platform rules (A2); keep C1 on every video | Open |
 | R-3 | If one video takes more hours than the owners have (C3), the channel cannot publish regularly. | High | High | 🔥 Very high | Mitigate | De-risk: a pilot video with hours recorded (A3) | Open |
 | R-4 | If the tools cost more than the budget (C2), the workflow must change. | Medium | High | 🟠 High | Mitigate | Discover: tool prices with dates; De-risk: real cost of the pilot | Open |
 | R-5 | If the chosen language and audience pay little per view, the monetized channel earns little for the same work (P1). | High | Medium | 🟠 High | Mitigate | Discover: revenue per 1,000 views by language and country, with sources | Open |
-| R-6 | If YouTube's rules on AI-made content change, a working channel can lose monetization. | High | Medium | 🟠 High | Accept, and monitor | Re-check C5 at every gate and record the date checked | Open |
-| R-7 | If a new channel cannot reach the Partner Program thresholds with the owners' time and format, AC1 is not met. | High | High | 🔥 Very high | Mitigate | Discover: read the current thresholds (C5, A5); De-risk: the pilot's numbers | Open |
+| R-6 | If YouTube's rules on AI-made content change, a working channel can lose monetization. The rules did change twice in 15 months (2025-07-15, 2027-02-01; Clarify C5). | High | High | 🔥 Very high | Accept, and monitor | Re-check C5 at every gate and record the date checked | Open |
+| R-7 | If a new channel cannot reach the threshold for new applicants (8,000 watch hours in 365 days or 20 million Shorts views in 90 days, from 2027-02-01; Clarify C5 a), AC1 is not met. | High | High | 🔥 Very high | Mitigate | Discover: what growth such channels reach and in how long; De-risk: the pilot's numbers (A5) | Open |
 | R-8 | If machine translation loses the meaning of a Chinese story, the remake is weak or wrong. | Medium | High | 🟠 High | Mitigate | Discover: compare translation tools on sample stories (A4); De-risk: check the pilot story | Open |
 
 **Next:** after both owners approve Clarify, Discover takes R-1, R-2, R-7, R-4, R-5 and R-8 first.

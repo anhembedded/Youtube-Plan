@@ -14,7 +14,7 @@ How the work is organised (folders, IDs, how decisions are made): [PRO-001](prop
 
 | Id | Epic | Status | Next |
 | :--- | :--- | :--- | :--- |
-| [EPIC-001](epics/EPIC-001_project-start/README.md) | Start the project: Gates 1 to 4 | 🟡 Clarify v0.3, waiting for approval | The owner and the partner approve Clarify |
+| [EPIC-001](epics/EPIC-001_project-start/README.md) | Start the project: Gates 1 to 4 | 🟡 Clarify v0.4, waiting for approval | The owner and the partner approve Clarify |
 
 ## Standalone tasks
 
