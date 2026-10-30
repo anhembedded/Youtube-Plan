@@ -79,7 +79,7 @@ Do these by reading. Report each finding as a table row (location, issue, fix).
 | Vocabulary | A term used in documents but missing from Vocabulary |
 | Tags | An untagged `TODO` that cannot be decided at Clarify; a tagged one that can be answered now |
 | Labels | A statement that is not a Fact (with source), an Assumption (with a way to validate) or an Open question (with an owner) |
-| Index drift | A document missing from the map, a decision missing from the log, a register row that disagrees with its source |
+| Index drift | A document missing from the map, a decision missing from the log, an assumption missing from the assumption log, a fact whose SRC ID is not in the source register, a register row that disagrees with its source |
 | Traceability | A pain (P#) with no objective, constraint or gate addressing it and not marked "not addressed"; an objective (O#) that cites no pain; a deliverable (DL#) that serves no objective; a constraint (C#) whose "Affects" cell is empty or cites an ID that does not exist; a Q or D whose link to a C# does not agree in both directions |
 | Document rules | A rule in [Document rules](../../rules/document-rules.md) broken: no At a glance block, a tag without its phase, a SMART table, a table wider than five columns, a secret or personal data, an ID prefix that collides |
 | Links | A link to a file or heading that does not exist |

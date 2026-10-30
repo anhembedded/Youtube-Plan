@@ -27,14 +27,14 @@ A reader must not need the context of the conversation to understand a document:
 | DL1 | Deliverable | Clarify §3 (or an epic charter) |
 | G1 | Grey area | Clarify §4 (or an epic charter) |
 | C1 | Constraint | Clarify §5.1 (or an epic charter) |
-| A1 | Assumption | Clarify §5.2 (or an epic charter) |
+| A1 | Assumption | Clarify §5.2, or the Discover, De-risk or epic document that raised it; every one also has a row in the assumption log, `Docs/README.md` §6 |
 | AC1 | Acceptance criterion | Clarify §6.1 (or an epic charter) |
 | R-1 | Risk | Approach §7 |
 | SH-1 | Stakeholder | Stakeholders |
 | DS-1 | Discover item (finding or unknown) | Discover (project or epic) |
 | SL-1 | Solution candidate (a niche, format or tool option) | Discover, solution landscape |
 | TR-1 | Trap (a way the project fails) | Discover, solution landscape |
-| SRC-1 | Source (a policy page, article, competitor channel, source story) | Discover, sources |
+| SRC-1 | Source (the owners' words, a policy page, article, competitor channel, source story) | `Docs/README.md` §7, the only source register |
 | S-1 | Spike (a timeboxed experiment) | De-risk (project or epic), one file each |
 | Q-001 | Open question | `Docs/README.md` §5, the only register |
 | D-001 | Decision record | `Docs/Decisions/` or an epic's `decisions/`; one global sequence, logged in `Docs/README.md` §4 |
@@ -50,7 +50,7 @@ A reader must not need the context of the conversation to understand a document:
 
 ## 3. Honesty about what is known
 
-8. **Label every statement** as a Fact (with its source, e.g. "from the owner", or a policy page with the date checked), an Assumption (with a way to validate it) or an Open question (with a person who can answer).
+8. **Label every statement** as a Fact (citing its source ID, e.g. "Fact, SRC-1"), an Assumption (with an A ID and a way to validate it) or an Open question (with a Q ID and a person who can answer). A new source gets an SRC row in `Docs/README.md` §7, with the date checked for anything that can change; a new assumption gets a row in the assumption log, §6; both in the same change.
 9. **Name the phase of every deferred item.** Write `TODO → Discover phase`, `TODO → De-risk phase` or `TODO → Plan phase`, and both when needed (`TODO → Discover phase, then De-risk phase`). Say what is to be found out. An untagged `TODO` is decided in Clarify by the owner. Do not leave the phase for the reader to guess.
 10. **Every tagged item is picked up** in the document of its phase (for Discover, `Docs/Project-Management/Discover/Discover.md`) and, if it is a question, in the register.
 11. **Targets are examples until confirmed.** Mark them `e.g.` and tag the phase that sets them. Do not invent numbers or dates (subscribers, views, income). If a deadline or budget does not exist, say so and cite where it is recorded.

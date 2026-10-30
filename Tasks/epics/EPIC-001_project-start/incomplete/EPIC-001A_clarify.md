@@ -40,11 +40,11 @@ The working process is accepted ([PRO-001](../../../proposal/PRO-001.md)), but n
 ## 5. Verification
 | Criterion | Check | Result |
 | :--- | :--- | :--- |
-| 1 | Read the trace P → O → DL → AC in Clarify §6.1 | Done 2026-10-29: P1 → O1 → DL1 → AC1; P1 → O2 → DL2 → AC3; P2 → O3 → DL3 → AC4; AC2 withdrawn with its reason |
+| 1 | Read the trace P → O → DL → AC in Clarify §6.1 | Done 2026-10-29: P1, P3 → O1 → DL1 → AC1; P1 → O2 → DL2 → AC3; P2 → O3 → DL3 → AC4; AC2 withdrawn with its reason |
 | 2–4 | Compare the register with Clarify, item by item | Done 2026-10-29: Q-001, Q-004, Q-006, Q-007 closed; Q-002, Q-003, Q-008 "owners to decide" by the Plan gate; Q-005, Q-009, Q-010 open with their gate |
 | 5 | Every relative link resolves; the Gantt renders | Done 2026-10-29 (link and anchor check; Mermaid CLI 11.17.0) |
 | 6 | The approvals table has both owners' words and date | Not done: waiting for the owner and the partner |
 
 ## Resume
-- **Last verified:** Clarify v0.2 written on 2026-10-29 from two rounds of answers.
-- **Next action:** the owner and the partner review [Clarify v0.2](../../../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and approve §7; the owners answer Q-010 (how the partner records approval).
+- **Last verified:** Clarify v0.3 written on 2026-10-30 (v0.2 on 2026-10-29 from two rounds of answers).
+- **Next action:** the owner and the partner review [Clarify v0.3](../../../../Docs/Project-Management/Initiation-phase/Clarify/Clarify.md) and approve §7; the owners answer Q-010 (how the partner records approval).

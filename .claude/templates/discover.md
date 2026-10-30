@@ -37,6 +37,5 @@ description: The format of a Discover document — the project Discover (Docs/Pr
 | DS-1 | {…} | {G… holds / changes} | {De-risk S-n / not needed} |
 
 ## Sources
-| ID | Source | Checked on |
-| :--- | :--- | :--- |
-| SRC-1 | {title and link} | {YYYY-MM-DD} |
+<!-- Every source gets one row in the source register, Docs/README.md §7, with the date checked; this section lists the IDs used here. -->
+{SRC-n, SRC-m … — the sources this document cites, registered in Docs/README.md §7}

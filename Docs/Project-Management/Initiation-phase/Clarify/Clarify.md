@@ -3,7 +3,7 @@
 ## At a glance
 | Item | Content |
 | :--- | :--- |
-| Problem | The owners want an income from a YouTube channel and have not yet decided what to publish, in which language or format, or with which tools. |
+| Problem | The owners want an income from a YouTube channel. They have not yet decided what to publish, in which language or format, or with which tools, and do not yet know how a channel grows on YouTube. |
 | Objective | A new channel, monetized, that publishes Chinese stories remade with an original script and an AI voice, produced by a repeatable workflow (§2.2). |
 | Not done | Re-uploading or lightly editing other people's videos; storing videos in this repository; growing the income after monetization, which is ongoing operation (§4). |
 | Limits | Remake, never copy (C1); both owners approve (C7); budget, time and deadline are still to be set by the owners (C2–C4). |
@@ -13,7 +13,7 @@
 
 | Field | Value |
 | :--- | :--- |
-| Version | 0.2 (Draft, for approval) |
+| Version | 0.3 (Draft, for approval) |
 | Origin | The owner, 2026-10-29: *"I want to make money by creating a youtube channel, the content i want to post is AI story copy from some social media on China."* Refined the same day: the stories are remade with the owner's own script and an AI voice, not copied (answer "(c)"). |
 
 **Revision history**
@@ -22,21 +22,23 @@
 | :--- | :--- | :--- | :--- |
 | 0.1 | 2026-10-29 | Assistant, for the owner | First draft from the owner's confirmed answers; open items registered as Q-001 to Q-009 |
 | 0.2 | 2026-10-29 | Assistant, for the owner | The owner's two rounds of answers: a partner who approves equally (C7), budget, time and deadline left to the owners (C2–C4), the end of the project set to monetization plus a repeatable workflow (AC2 withdrawn), translation needed (A4), a new channel (DL1, A5) |
+| 0.3 | 2026-10-30 | Assistant, for the owner | The owners do not yet know how a channel grows on YouTube (P3, G7); facts cite the source register, and every assumption is in the assumption log of the index |
 
-**How to read this document.** Every statement is a **Fact** (with its source), an **Assumption** (with how it will be checked) or an **Open question** (with who answers). A `TODO` with no phase is decided now, in Clarify, by the owners. A `TODO → Discover phase`, `→ De-risk phase` or `→ Plan phase` is answered later, in that phase. Targets marked *e.g.* are examples until the owners confirm them. **The owners** means the owner and the partner together ([Stakeholders](../../Stakeholders.md)).
+**How to read this document.** Every statement is a **Fact** (with its source), an **Assumption** (with how it will be checked) or an **Open question** (with who answers). A `TODO` with no phase is decided now, in Clarify, by the owners. A `TODO → Discover phase`, `→ De-risk phase` or `→ Plan phase` is answered later, in that phase. Targets marked *e.g.* are examples until the owners confirm them. **The owners** means the owner and the partner together ([Stakeholders](../../Stakeholders.md)). A fact cites its source by ID (SRC-n) from the [source register](../../../README.md#7-source-register); every assumption is also listed in the [assumption log](../../../README.md#6-assumption-log).
 
 ---
 
 ## 1. Problem
 
 ### 1.1 Background
-The owner and a partner want to start a new YouTube channel to earn money (Fact, the owner, 2026-10-29: "Me + a partner", "Equal partner, both approve", "Start from zero"). The content is stories found on Chinese social media, remade in the owners' own words and voiced by an AI voice (Fact, the owner, 2026-10-29). Neither owner reads Chinese, so every story is read through translation (Fact, the owner, 2026-10-29: "No, translation needed"). This repository manages the project: plans, decisions, research and tracking. It holds no videos (Fact, the owner, 2026-10-29). How the work is organised is set out in [PRO-001](../../../../Tasks/proposal/PRO-001.md).
+The owner and a partner want to start a new YouTube channel to earn money (Fact, SRC-1: "Me + a partner", "Equal partner, both approve", "Start from zero"). The content is stories found on Chinese social media, remade in the owners' own words and voiced by an AI voice (Fact, SRC-1). Neither owner reads Chinese, so every story is read through translation (Fact, SRC-1: "No, translation needed"). This repository manages the project: plans, decisions, research and tracking. It holds no videos (Fact, SRC-1). How the work is organised is set out in [PRO-001](../../../../Tasks/proposal/PRO-001.md).
 
 ### 1.2 Pains
 | ID | Pain | Evidence |
 | :--- | :--- | :--- |
-| P1 | The owners have no income from YouTube and want one. | Fact, the owner, 2026-10-29 |
-| P2 | The owners have not decided the story genre, the language and audience, or the video format, so there is nothing concrete to produce yet. | Fact, the owner, 2026-10-29: "Not decided" to each |
+| P1 | The owners have no income from YouTube and want one. | Fact, SRC-1 |
+| P2 | The owners have not decided the story genre, the language and audience, or the video format, so there is nothing concrete to produce yet. | Fact, SRC-1: "Not decided" to each |
+| P3 | The owners do not yet know how a channel grows on YouTube: which signals make YouTube recommend a video, and what makes a video succeed. | Fact, SRC-2 |
 
 ## 2. Objectives
 
@@ -46,11 +48,11 @@ The requirement is **a monetized YouTube channel built on remade Chinese stories
 ### 2.2 Objectives
 | ID | Objective (outcome) | Measure and target | Addresses |
 | :--- | :--- | :--- | :--- |
-| O1 | The channel is monetized. | Monetization status. Target: accepted into the YouTube Partner Program (Fact, the owner, 2026-10-29: "Monetized + repeatable"). By when: `TODO` — the owners (Q-008). | P1 |
+| O1 | The channel is monetized. | Monetization status. Target: accepted into the YouTube Partner Program (Fact, SRC-1: "Monetized + repeatable"). By when: `TODO` — the owners (Q-008). | P1, P3 |
 | O2 | Videos are produced by a repeatable workflow that fits the owners' time and budget. | Hours and cost per video. Target: within C2 and C3; real values `TODO → De-risk phase` (pilot video). | P1 |
 | O3 | Genre, language, format and tools are chosen on evidence, not guessed. | Number of the grey areas G1–G4 settled by an accepted decision record. Target: 4 of 4 before production starts. | P2 |
 
-Income after monetization is tracked during ongoing operation; it is not a target of this project (Fact, the owner, 2026-10-29).
+Income after monetization is tracked during ongoing operation; it is not a target of this project (Fact, SRC-1).
 
 ## 3. Deliverables
 | ID | Deliverable | Objective |
@@ -79,19 +81,20 @@ Income after monetization is tracked during ongoing operation; it is not a targe
 | G4 | Tools for translation, script, voice, visuals and editing | To be listed in Discover | `TODO → Discover phase, then De-risk phase` |
 | G5 | Source platforms for stories | e.g. Douyin, Bilibili, Kuaishou, Xiaohongshu, Weibo | `TODO → Discover phase` |
 | G6 | Income streams | Ads (Partner Program), sponsorship, affiliate links, other platforms | `TODO → Discover phase` |
+| G7 | How the channel grows: the signals YouTube uses to recommend videos, and which of them limits this channel | A growth model (impressions → click-through rate → watch time and retention → recommendations → subscribers and watch hours), each link a hypothesis checked against YouTube's published guidance, then measured on the channel's own videos | `TODO → Discover phase, then De-risk phase` |
 
 ## 5. Constraints and assumptions
 
 ### 5.1 Constraints
 | ID | Constraint | Source | Affects |
 | :--- | :--- | :--- | :--- |
-| C1 | **Remake, never copy.** A source story is used only as an idea. The script is original, the voice is an AI voice, and the source's footage, images, voice, music and text are not reused. The source of every story is recorded. | Fact, the owner, 2026-10-29 (answer "(c)") | O2, DL2, G5, A1, A2, R-1, R-2, Q-009 |
-| C2 | Budget per month for tools: not set. The owners set it; until then no money is spent (C7). | The owner, 2026-10-29: "Not decided yet" (Q-002). Owners to decide, at the latest at the Plan gate. | O2, G4, R-4 |
-| C3 | The owners' time per week: not set. The pilot video measures the real hours per video. | The owner, 2026-10-29: "Not decision" (Q-003). Owners to decide, at the latest at the Plan gate. | O2, A3, R-3 |
-| C4 | Deadline for the project: none yet. Every gate has its own time-box or stop rule instead ([Approach §5](../Approach.md#5-gates-and-exit-criteria)). | The owner, 2026-10-29: "Not decided yet" (Q-008). Owners to decide, at the latest at the Plan gate. | O1, AC1 |
+| C1 | **Remake, never copy.** A source story is used only as an idea. The script is original, the voice is an AI voice, and the source's footage, images, voice, music and text are not reused. The source of every story is recorded. | Fact, SRC-1 (answer "(c)") | O2, DL2, G5, A1, A2, R-1, R-2, Q-009 |
+| C2 | Budget per month for tools: not set. The owners set it; until then no money is spent (C7). | SRC-1: "Not decided yet" (Q-002). Owners to decide, at the latest at the Plan gate. | O2, G4, R-4 |
+| C3 | The owners' time per week: not set. The pilot video measures the real hours per video. | SRC-1: "Not decision" (Q-003). Owners to decide, at the latest at the Plan gate. | O2, A3, R-3 |
+| C4 | Deadline for the project: none yet. Every gate has its own time-box or stop rule instead ([Approach §5](../Approach.md#5-gates-and-exit-criteria)). | SRC-1: "Not decided yet" (Q-008). Owners to decide, at the latest at the Plan gate. | O1, AC1 |
 | C5 | YouTube's rules for monetization: reused content, inauthentic content, disclosure of AI-made content, and the thresholds a new channel must reach. | YouTube policy pages; content `TODO → Discover phase` (read them and record the date checked) | O1, DL1, A1, A5, R-1, R-6, R-7, Q-005, Q-009 |
-| C6 | This repository holds project management only; no videos. | Fact, the owner, 2026-10-29 | DL2 |
-| C7 | **Both owners approve.** The owner and the partner both approve every gate and every decision that spends money, creates an account, publishes, uses someone else's material, or changes scope, acceptance, budget or deadline. | Fact, the owner, 2026-10-29: "Equal partner, both approve" | §7, AC1, C2, Q-010 |
+| C6 | This repository holds project management only; no videos. | Fact, SRC-1 | DL2 |
+| C7 | **Both owners approve.** The owner and the partner both approve every gate and every decision that spends money, creates an account, publishes, uses someone else's material, or changes scope, acceptance, budget or deadline. | Fact, SRC-1: "Equal partner, both approve" | §7, AC1, C2, Q-010 |
 
 ### 5.2 Assumptions
 | ID | Assumption | How it is verified | Status |
@@ -105,7 +108,7 @@ Income after monetization is tracked during ongoing operation; it is not a targe
 ## 6. Acceptance
 
 ### 6.1 Acceptance criteria
-The project is done when AC1, AC3 and AC4 are met (Fact, the owner, 2026-10-29: "Monetized + repeatable").
+The project is done when AC1, AC3 and AC4 are met (Fact, SRC-1: "Monetized + repeatable").
 
 | ID | Criterion | Metric | Target | How measured |
 | :--- | :--- | :--- | :--- | :--- |
@@ -114,7 +117,7 @@ The project is done when AC1, AC3 and AC4 are met (Fact, the owner, 2026-10-29: 
 | AC3 | Videos can be produced end to end with a written, repeatable workflow, within the limits. | Hours and cost per video; the workflow and checklist exist (DL2) | Within C2 and C3 | The production log of the pilot video and later videos |
 | AC4 | The channel's main choices are made on evidence. | G1–G4 settled by accepted decision records | 4 of 4 | Decision log in the [index](../../../README.md#4-decision-log) |
 
-**Trace.** P1 → O1 → DL1 → AC1. P1 → O2 → DL2 → AC3. P2 → O3 → DL3 → AC4.
+**Trace.** P1, P3 → O1 → DL1 → AC1. P1 → O2 → DL2 → AC3. P2 → O3 → DL3 → AC4.
 
 ## 7. Approval
 Approval of the scope and constraints, to proceed to Discover. It is not a choice of genre, language, format or tool. Both owners approve (C7); how the partner records the approval is Q-010.
@@ -124,4 +127,4 @@ Approval of the scope and constraints, to proceed to Discover. It is not a choic
 | The owner | Owner | Pending | Pending |
 | The partner | Owner (equal partner) | Pending | Pending |
 
-**Next:** after both approvals, Discover (Gate 2) researches G1–G6, C5, A1, A2, A4 and A5. It is planned as the next task of [EPIC-001](../../../../Tasks/epics/EPIC-001_project-start/README.md).
+**Next:** after both approvals, Discover (Gate 2) researches G1–G7, C5, A1, A2, A4 and A5. It is planned as the next task of [EPIC-001](../../../../Tasks/epics/EPIC-001_project-start/README.md).

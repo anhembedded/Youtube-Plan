@@ -8,11 +8,11 @@
 
 | ID | Stakeholder | Role or interest | Influence | Source |
 | :--- | :--- | :--- | :--- | :--- |
-| SH-1 | The owner (GitHub `anhembedded`) | Runs the project, produces the videos, approves together with the partner | Decides, with SH-5 | Fact, the owner, 2026-10-29 |
+| SH-1 | The owner (GitHub `anhembedded`) | Runs the project, produces the videos, approves together with the partner | Decides, with SH-5 | Fact, SRC-1 |
 | SH-2 | YouTube | Sets the rules for monetization, copyright and AI content (Clarify C5) | Rules the project must follow | Fact: the channel is on YouTube |
 | SH-3 | Viewers | Decide whether the channel grows and is monetized (O1) | Indirect, through views and watch time | Assumption: the audience is set in Discover (G2) |
 | SH-4 | Creators of the source stories | Affected when their stories are remade; may file claims (R-2) | Can block videos | Assumption: checked in Discover (A2) |
-| SH-5 | The partner | Equal partner; approves together with the owner. Their share of the work: `TODO` — the owners | Decides, with SH-1 | Fact, the owner, 2026-10-29: *"Me + a partner"*, *"Equal partner, both approve"* |
+| SH-5 | The partner | Equal partner; approves together with the owner. Their share of the work: `TODO` — the owners | Decides, with SH-1 | Fact, SRC-1: *"Me + a partner"*, *"Equal partner, both approve"* |
 
 The partner is named here only by role; no personal data is recorded.
 

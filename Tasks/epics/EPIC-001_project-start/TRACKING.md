@@ -54,6 +54,7 @@ gantt
 | :--- | :--- | :--- |
 | 2026-10-29 | Scaffold | Epic created; EPIC-001A started with Clarify v0.1. |
 | 2026-10-29 | EPIC-001A | Two rounds of questions answered; Clarify v0.2 written; waiting for both owners' approval. |
+| 2026-10-30 | EPIC-001A | Clarify v0.3: P3 and G7 (how a channel grows); assumption log and source register added to the index. |
 
 ---
 

@@ -18,7 +18,7 @@
 | :-- | :-: | :-: |
 | Gates passed | 0 of 4 | 4 of 4 |
 | Owner questions open for Gate 1 | 9 (Q-001 to Q-009) | 0 |
-| Grey areas G1–G6 with evidence | 0 of 6 | 6 of 6 |
+| Grey areas G1–G7 with evidence | 0 of 7 | 7 of 7 |
 | Epic roadmap for Gates 5–6 | None | Written in the Plan document |
 
 On 2026-10-29, after two rounds of answers, the Gate 1 questions are answered or carried forward to the gate that needs them (Q-005, Q-009); Q-010 (how the partner approves) is new.
@@ -29,14 +29,14 @@ Only the next gate is planned in detail. B, C and D are sliced when the gate bef
 | Id | Task | Depends on | Risk | Status |
 | :--- | :--- | :--- | :-: | :--- |
 | [EPIC-001A](incomplete/EPIC-001A_clarify.md) | Clarify — project charter approved (Gate 1) | None | 🟡 | In progress |
-| EPIC-001B | Discover — research G1–G6, C5, A1, A2 (Gate 2) | EPIC-001A | 🔴 | Planned, not sliced |
+| EPIC-001B | Discover — research G1–G7, C5, A1, A2, A4, A5 (Gate 2) | EPIC-001A | 🔴 | Planned, not sliced |
 | EPIC-001C | De-risk — pilot video and other spikes (Gate 3) | EPIC-001B | 🔴 | Planned, not sliced |
 | EPIC-001D | Plan — milestones and epic roadmap (Gate 4) | EPIC-001C | 🟡 | Planned, not sliced |
 
 ## 4. Phase exit criteria
 | Phase | Required outcome | Evidence required to close |
 | :--- | :--- | :--- |
-| Gate 1 Clarify | The owner approves the charter | [Approach §5](../../../Docs/Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria), Gate 1 row; the approvals table |
+| Gate 1 Clarify | Both owners approve the charter | [Approach §5](../../../Docs/Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria), Gate 1 row; the approvals table |
 | Gate 2 Discover | Every Discover item has a finding or is passed to De-risk | Approach §5, Gate 2 row |
 | Gate 3 De-risk | Every very-high risk has a spike verdict or an accepted response | Approach §5, Gate 3 row |
 | Gate 4 Plan | Milestones and epic roadmap written from the Gate 3 evidence | Approach §5, Gate 4 row |

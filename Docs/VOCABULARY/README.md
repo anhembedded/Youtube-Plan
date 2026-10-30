@@ -30,6 +30,9 @@ Working definitions. The official wording is read and dated in Discover (Clarify
 | :--- | :--- |
 | **The owners** | The owner and the partner, who approve together (Clarify C7). "The owner" alone means SH-1. See [Stakeholders](../Project-Management/Stakeholders.md). |
 | **Gate** | A checkpoint at the end of a step (Clarify, Discover, De-risk, Plan, Implement, Validate). See [Approach §5](../Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria). |
+| **Growth model** | The chain of signals by which a video reaches viewers: impressions → click-through rate → watch time and retention → recommendations → subscribers and watch hours. Each link is a hypothesis until measured on the channel (Clarify G7). |
+| **Source register** | The list of every source a fact comes from (SRC-n), in the [index](../README.md#7-source-register). |
+| **Assumption log** | The list of every assumption (A-n) and its status, in the [index](../README.md#6-assumption-log). |
 | **Pilot video** | The first video made from story to upload, to measure real hours, cost and quality before a batch. |
 | **Spike** | A time-boxed experiment that answers one question (S-n). |
 | **Grey area** | An open choice in Clarify (G-n), settled later by evidence. |
