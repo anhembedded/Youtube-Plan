@@ -33,7 +33,7 @@ An instruction file at the root of the repository that loads the rules; a small 
 | :--- | :--- | :--- |
 | 1 | `CLAUDE.md` exists at the root and loads the rules file | Done 2026-10-30 |
 | 2 | 11 violations planted in a copy of the repository (broken link, broken anchor, R-, Q-, D-, SRC- IDs not defined, assumption not logged, document not in the map, epic not on the board, process word, e-mail address) | Done 2026-10-30: all 11 reported, exit code 1 |
-| 3 | The check on the real documents; the workflow's diagram step run locally | Done 2026-10-30: "OK: 46 Markdown files checked"; 12 of 12 diagrams render. The first run on GitHub is recorded in the pull request |
+| 3 | The check on the real documents; the workflow's diagram step run locally | Done 2026-10-30: "OK: 46 Markdown files checked"; 12 of 12 diagrams render. First run on GitHub, 2026-10-30, pull request #4 (`docs` job): success, 12 of 12 diagrams rendered |
 
 ## Notes
 The first run found a real exception: PRO-001 describes the repository's own process, including the rules folder, so it is listed as a known exception with its reason. Discussed in chat on 2026-10-30.
