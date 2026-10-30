@@ -1,0 +1,51 @@
+name: docs-check
+
+# Mechanical checks of the project documents on every pull request and push to main.
+# What is checked: .github/scripts/check_docs.py (header) and
+# .claude/skills/Project-Manager/framework.md §5.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Links, IDs, registers, maps, two layers, secrets
+        run: python3 .github/scripts/check_docs.py --extract-mermaid "$RUNNER_TEMP/mermaid"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Every Mermaid diagram renders
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: "true"
+        run: |
+          chrome="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          printf '{"executablePath":"%s","args":["--no-sandbox"]}' "$chrome" > "$RUNNER_TEMP/puppeteer.json"
+          status=0
+          for f in "$RUNNER_TEMP"/mermaid/*.mmd; do
+            [ -e "$f" ] || continue
+            out="${f%.mmd}.svg"
+            if npm exec --yes --package=@mermaid-js/mermaid-cli@11.17.0 -- \
+                 mmdc --puppeteerConfigFile "$RUNNER_TEMP/puppeteer.json" --input "$f" --output "$out" >/dev/null 2>&1 \
+               && [ -s "$out" ]; then
+              echo "ok   $(basename "$f")"
+            else
+              echo "FAIL $(basename "$f")"; status=1
+            fi
+          done
+          exit $status

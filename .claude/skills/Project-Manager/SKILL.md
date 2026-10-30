@@ -10,19 +10,19 @@ spend money, publish, or approve anything for a person. This skill holds the pro
 
 ## Where the facts are
 
-Files marked *(not written yet)* are created during Clarify; until then, say so instead of guessing their content.
+Files marked *(not written yet)* are created in a later phase; until then, say so instead of guessing their content.
 
 | Need | Read |
 |------|------|
 | Steps, gates, triage rule, routing, report format, checks | `framework.md` (this skill folder) §1 to §5 |
 | What a project is, triple constraint, phases, planning rules | `framework.md` §6, §7 |
 | The method behind the steps | `Docs/Project-Process/Thinking New project.md` and the step notes beside it |
-| Status, document map, decision log, open-question register, approvals | `Docs/README.md` *(not written yet)* |
-| Stakeholders and roles | `Docs/Project-Management/Stakeholders.md` *(not written yet)* |
-| Gate definitions, exit criteria, risks | `Docs/Project-Management/Initiation-phase/Approach.md` *(not written yet)* |
-| Scope, schedule and resource constraints, acceptance criteria | `Docs/Project-Management/Initiation-phase/Clarify/Clarify.md` *(not written yet)* |
+| Status, document map, decision log, open-question register, approvals | `Docs/README.md` |
+| Stakeholders and roles | `Docs/Project-Management/Stakeholders.md` |
+| Gate definitions, exit criteria, risks | `Docs/Project-Management/Initiation-phase/Approach.md` |
+| Scope, schedule and resource constraints, acceptance criteria | `Docs/Project-Management/Initiation-phase/Clarify/Clarify.md` |
 | How to write or revise a phase document (structure, IDs, tags, presentation) | `.claude/rules/document-rules.md` |
-| Meaning of a project term, retired terms | `Docs/VOCABULARY/README.md` *(not written yet)* |
+| Meaning of a project term, retired terms | `Docs/VOCABULARY/README.md` |
 | Milestones and the epic roadmap | `Docs/Project-Management/Plan/Plan.md` *(not written yet)* |
 | Proposals, epics and standalone tasks (the board) | `Tasks/README.md` |
 | Repository layout, IDs and the decision process | `Tasks/proposal/PRO-001.md` (accepted) |
@@ -47,7 +47,7 @@ Read `Docs/README.md` first (once it exists), then only what the task touches. D
    - An approval is recorded only when the person gave it, with evidence (e.g. a quote from the conversation and its date).
 5. **Route** a change to its one source of truth (Framework §3).
 6. **Report status** in the format of Framework §4.
-7. **Check consistency:** do every row of Framework §5 by reading and fix every finding.
+7. **Check consistency:** run `python3 .github/scripts/check_docs.py`, then do the remaining rows of Framework §5 by reading; fix every finding. Never add to the script's allowlist without a reason and the user's agreement.
 8. Update the index (`Docs/README.md`) and the board (`Tasks/README.md`) in the same change as the document change: document map, registers, approvals. IDs (Q, D) are never reused; close a question by setting its status and linking the answer. Do not paste content from other documents into the index; link to it. When a placeholder gets real content, replace the `TODO` and remove the matching "Not started". A new project term goes into `Docs/VOCABULARY/README.md` in the same change; a new AI-layer term into `.claude/rules/ai-glossary.md`.
 
 ## Rules

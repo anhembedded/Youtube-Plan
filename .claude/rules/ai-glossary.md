@@ -5,7 +5,7 @@ description: Terms for the AI layer of the YouTube Plan project (governance, pro
 # AI glossary
 
 Terms that matter to how the AI works on this project, kept out of the project documents on purpose: the people on the project do not need them (Constitution invariant 11).
-Project terms (niche, gates, roles, YouTube metrics) are defined in `Docs/VOCABULARY/README.md` (not written yet). Define a term once; add new AI-layer terms here in the same change.
+Project terms (niche, gates, roles, YouTube metrics) are defined in [Vocabulary](../../Docs/VOCABULARY/README.md). Define a term once; add new AI-layer terms here in the same change.
 
 | Term | Definition | Owner | Defined in | Not to be confused with |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16,7 +16,7 @@ Project terms (niche, gates, roles, YouTube metrics) are defined in `Docs/VOCABU
 | **Invariant** | A numbered rule in the Constitution (§5) that every decision must satisfy. | the user | [CONSTITUTION.md](../CONSTITUTION.md) | a guideline |
 | **Hat** | A role the AI picks for a task: Senior PM, Channel Strategist, Producer, QA / Policy reviewer. It says which hat it uses when that affects the answer. | — | Constitution §1 | a person |
 | **Autonomy tier (A, B, C)** | A: decide alone. B: decide, record, inform. C: hard stop, ask with options (spending money, choosing a tool or provider, publishing, using third-party material, changing scope or acceptance criteria). | the user | Constitution §2 | priority |
-| **Human gate** | A decision only a person may make (every Tier C item). Recorded in the approvals table of `Docs/README.md` §3. | the owner | Constitution invariant 8 | a review by the AI |
+| **Human gate** | A decision only the owners may make (every Tier C item), with both approvals: the owner's and the partner's. Recorded in the approvals table of `Docs/README.md` §3. | the owners | Constitution invariant 8 | a review by the AI |
 | **Fact / Assumption / Open question** | The three labels for a statement. Fact has a source; an assumption is temporary and has a way to validate it; an open question has a person who can answer. | — | Constitution invariant 1 | opinion |
 | **`TODO` / `Unknown — need to ask <who>`** | How an unfilled item is written. Never a silent blank, never a guess. | — | [Document rules](document-rules.md) §3 | a placeholder with an invented value |
 | **Source of truth** (one) | Each rule, spec or definition lives in one document; others link to it. A change of scope or acceptance criteria goes to Clarify, a change of method, gates or risks to Approach, a choice between alternatives to `Docs/Decisions/`. | — | Constitution invariant 2 | a copy |
@@ -24,4 +24,6 @@ Project terms (niche, gates, roles, YouTube metrics) are defined in `Docs/VOCABU
 | **Seam / Variant** | A seam is the extension point built on the first case (e.g. a script template that a second language could reuse). A variant is a second implementation nobody has asked for yet: built only when a real case arrives. | — | Constitution invariant 6 | — |
 | **Ratchet** | A quality bar that can only rise: never lower the acceptance criteria or the quality checklist without the owner's approval. | — | Constitution invariant 7 | a target |
 | **Remake, never copy** | A source story is used only as an idea; script, voice and visuals are original, and the source is recorded. | the owner | Constitution invariant 12 | translating or re-uploading a source video |
+| **Guard** (`.github/scripts/check_docs.py`) | A script that fails when a mechanical documentation rule is broken (links, IDs, registers, maps, two layers, secrets); it runs on every pull request through `.github/workflows/docs-check.yml`. It enforces rules; it does not judge quality. Its allowlist of known exceptions, each with a reason, may only shrink. | the owners | Framework §5 | a review by a person |
+| **`CLAUDE.md`** | The file Claude Code loads in every session; it imports the Constitution and summarises the process of PRO-001. | the user | `CLAUDE.md` | the Constitution, which it loads |
 | **Skill** (`Project-Manager`, `create-epic`, `execute-task`, `create-skill`) | A packaged checklist the AI follows for one kind of task. Invoking one binds the AI to its full checklist. | — | `.claude/skills/<name>/SKILL.md` | a tool or a script |

@@ -93,6 +93,7 @@ Whenever a child starts, finishes or is cancelled, the pull request that changes
 
 ## 8. Verification Protocol
 Before committing:
+0. Run `python3 .github/scripts/check_docs.py` and fix every finding (links, board, IDs).
 1. Validate the `TRACKING.md` Gantt (and any other Mermaid block) per `.claude/skills/execute-task/references/mermaid-validation.md`.
 2. Check every relative link in the new files resolves to an existing file.
 3. Check that every child in the README table has a task file, a Gantt bar and a matrix row, and that `Tasks/README.md` and `Docs/README.md` list the epic.

@@ -2,8 +2,8 @@
 
 The steps the project follows and the rules for moving work between them. It applies the owner's project-management framework
 (Clarify, Discover, De-risk, Plan, Implement, Validate) to the YouTube Plan project. Gate definitions and exit criteria will live in
-`Docs/Project-Management/Initiation-phase/Approach.md` (not written yet); this file adds only the mapping and the working rules.
-Terms are defined in `Docs/VOCABULARY/README.md`. Status, registers and approvals are in `Docs/README.md` (both not written yet).
+[Approach §5](../../../Docs/Project-Management/Initiation-phase/Approach.md#5-gates-and-exit-criteria); this file adds only the mapping and the working rules.
+Terms are defined in [Vocabulary](../../../Docs/VOCABULARY/README.md). Status, registers and approvals are in [Docs/README.md](../../../Docs/README.md).
 
 Source of the framework: [Docs/Project-Process](../../../Docs/Project-Process/Thinking%20New%20project.md).
 The repository layout and the decision process were accepted in [PRO-001](../../../Tasks/proposal/PRO-001.md).
@@ -70,7 +70,8 @@ State uncertainty early. Give dates only where one exists; see the constraints i
 
 ## 5. Consistency checks
 
-Do these by reading. Report each finding as a table row (location, issue, fix).
+**Run the guard first:** `python3 .github/scripts/check_docs.py`. It checks mechanically, and again on every pull request (`.github/workflows/docs-check.yml`): links and anchors; Clarify, risk, question, decision and source IDs cited but not defined; the assumption log against the assumptions; the document map and the board; AI-process words in `Docs/` and `Tasks/`; personal data and secrets; and that every Mermaid block renders. Its known exceptions are listed in the script with a reason and may only shrink.
+Do the rows it cannot judge by reading. Report each finding as a table row (location, issue, fix).
 
 | Check | Looks for |
 |-------|-----------|
@@ -79,7 +80,7 @@ Do these by reading. Report each finding as a table row (location, issue, fix).
 | Vocabulary | A term used in documents but missing from Vocabulary |
 | Tags | An untagged `TODO` that cannot be decided at Clarify; a tagged one that can be answered now |
 | Labels | A statement that is not a Fact (with source), an Assumption (with a way to validate) or an Open question (with an owner) |
-| Index drift | A document missing from the map, a decision missing from the log, a register row that disagrees with its source |
+| Index drift | A document missing from the map, a decision missing from the log, an assumption missing from the assumption log, a fact whose SRC ID is not in the source register, a register row that disagrees with its source |
 | Traceability | A pain (P#) with no objective, constraint or gate addressing it and not marked "not addressed"; an objective (O#) that cites no pain; a deliverable (DL#) that serves no objective; a constraint (C#) whose "Affects" cell is empty or cites an ID that does not exist; a Q or D whose link to a C# does not agree in both directions |
 | Document rules | A rule in [Document rules](../../rules/document-rules.md) broken: no At a glance block, a tag without its phase, a SMART table, a table wider than five columns, a secret or personal data, an ID prefix that collides |
 | Links | A link to a file or heading that does not exist |
